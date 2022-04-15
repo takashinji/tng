@@ -1,53 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Bare - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">BasketBall Team TNG</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<html lang="ja">
+  <head>
 
-        <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">                                
-                <h1>活動内容</h1>
-                <p class="lead">愛知県で活動しているバスケットボールチームです。創部20年くらいです</p>
-                <p class="lead">土曜日の夜に練習をして、日曜日に試合に出場しています</p>
-                <p>現在人数不足のため参加者募集中です</p>
-                <p>Bootstrap v5.1.3</p>
-            </div>
-        </div>    
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Sample</title>
+
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BasketBallTeam TNG</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Contact</a>
+            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+      <div class="card">
+        <img src="./img/team-image.jpg" class="card-img-top" alt="試合後の画像" height="300px">
+        <div class="card-body">
+          <h5 class="card-title">チーム名: T N G</h5>
+          <p class="card-text">
+            豊田市周辺で活動をする男子チームです<br>
+            練習は毎週土曜日 19:00～21:00<br>
+            愛知県の新スポーツリーグに所属してます<br>
+            現在新たなメンバーを募集しています<br>
+            バスケが好きで上手くなりたい。楽しみたい人なら誰でも大歓迎です<br>
+            年齢層は20代～40代<br>
+            リーグも、年齢制限のない試合、35才以上の試合とあります<br>
+            参加希望の方はContactより参加希望のメッセージをお願いします<br>            
+          </p>          
+        </div>
+      </div>      
+    </div>
+    
+    <div class="container mt-3">
+      <div class="card">
+        <div class="card-header">
+          Contact
+        </div>
+        <div class="card-body">
+          Email Address: <a href="#" class="text-primary">s.taka.1981.02.19@gmail.com</a>
+        </div>
+      </div>    
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>    
+  </body>
 </html>
