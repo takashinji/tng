@@ -7,45 +7,44 @@
     <title>T.N.G</title>
     <!-- BootstrapのCSS読み込み -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">BasketBallTeam TNG</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="#Home">Home</a>
-            <a class="nav-link" href="#Link">Link</a>
-            <a class="nav-link" href="#Contact">Contact</a>
-            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-          </div>
+        </button>  
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#Home">BasketBall Team TNG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Place">Place</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Link">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <div class="container py-4">
-      
-      <header class="pb-3 mb-4 border-bottom">
-        <div class="d-flex align-items-center text-dark text-decoration-none">
-          <img src="./icon/bootstrap-fill.svg" alt="Bootstrap" width="32" height="32">
-          <img src="./icon/tng_icon.png" alt="Bootstrap" width="100" height="100">        
-        </div>
-      </header>
-
-      <div id="Home" class="card m-3">
-        <div class="card-header">
-          チーム紹介          
-        </div>        
-
-        <img src="./img/team-image.jpg" class="card-img-top" alt="試合後の画像" height="300px">
-        <div class="card-body">
-          <h6 class="card-title">チーム名: T N G</h6>
-          <p class="card-text">
+    <div id="Home" class="container py-4">
+      <div class="bg-light p-5 rounded">
+        <div class="col-sm-8 mx-auto">          
+          <p>
             豊田市周辺で活動をする男子チームです<br>
             練習は毎週土曜日 19:00～21:00<br>
             愛知県の新スポーツリーグに所属してます<br>
@@ -53,16 +52,15 @@
             バスケが好きで上手くなりたい。楽しみたい人なら誰でも大歓迎です<br>
             年齢層は20代～40代<br>
             リーグも、年齢制限のない試合、35才以上の試合とあります<br>
-            参加希望の方は<a href="mailto:s.taka.1981.02.19@gmail.com" class="text-primary">こちら</a>よりメッセージお願いします<br>            
-          </p>          
+            参加希望の方はこちらよりメッセージお願いします<br>  
+          </p>
         </div>
-      </div>      
-      
-      <div id="Place" class="card m-3">
-        <div class="card-header">
-          活動場所テスト
-        </div>
-        <div class="card-body">
+      </div>
+    </div>    
+
+    <div id="Place" class="container py-4">
+      <div class="bg-light p-5 rounded">
+        <div class="col-sm-8 mx-auto">          
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31081.78515015981!2d137.07060869157462!3d35.02997331983834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60049ef75e23d721%3A0x231925b0d9c77073!2z6LGK55Sw5biC56uL6auY5bKh5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1650327425170!5m2!1sja!2sjp" 
@@ -70,30 +68,37 @@
                     style="border:0" 
                     allowfullscreen></iframe>
           </div>  
-        </div>        
-      </div>            
+        </div>
+      </div>
+    </div>    
 
-      <div id="Link" class="card m-3">
-        <div class="card-header">
-          Link
-        </div>
-        <div class="card-body">
-          <p class="card-text">
-            参加しているリーグ: <a href="http://shinspo-basket.sakura.ne.jp/" target="_blank" class="text-primary">新日本スポーツ連盟 愛知バスケットボール協会</a><br>
-          </p>          
-        </div>
-      </div>    
+    <div id="Link" class="container py-4">
+      <div class="bg-light p-5 rounded">
+        <div class="col-sm-8 mx-auto">          
 
-      <div id="Contact" class="card m-3">
-        <div class="card-header">
-          Contact
-        </div>
-        <div class="card-body">
-          Email Address: <a href="mailto:s.taka.1981.02.19@gmail.com" class="text-primary">メールはこちらへ</a>
-        </div>
-      </div>    
+          参加しているリーグ: <a href="http://shinspo-basket.sakura.ne.jp/" target="_blank" class="text-primary">新日本スポーツ連盟 愛知バスケットボール協会</a><br>
 
-    </div>
+        </div>
+      </div>
+    </div>    
+
+    <div id="Link" class="container py-4">
+      <div class="bg-light p-5 rounded">
+        <div class="col-sm-8 mx-auto">          
+          Email Address: <a href="mailto:s.taka.1981.02.19@gmail.com" class="text-primary">メールはこちらへ</a>          
+        </div>
+      </div>
+    </div>    
+
     <script src="js/bootstrap.min.js"></script>    
   </body>
+
+  <body>
+    <div></div>
+     
+    <script>
+        $('div').load('list.html');
+    </script>
+  </body>
+
 </html>
