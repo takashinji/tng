@@ -11,118 +11,144 @@
 
   <body>                    
 
-    <div class="container py-4">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-4">BasketBall Team TNG</span>
+          </a>
+    
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-bs-target="#pills-home"
+                  data-bs-toggle="pill"                  
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Home
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-link-tab"
+                  data-bs-target="#pills-link"
+                  data-bs-toggle="pill"                  
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-link"
+                  aria-selected="false"
+                >
+                  Link
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-place-tab"
+                  data-bs-target="#pills-place"
+                  data-bs-toggle="pill"                  
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-link"
+                  aria-selected="false"
+                >
+                    place
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-contact-tab"                  
+                  data-bs-target="#pills-contact"
+                  data-bs-toggle="pill"                  
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-link"
+                  aria-selected="false"
+                >
+                    Contact
+                </button>
+            </li>
 
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="pills-home-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-home"
-                type="button"
-                role="tab"
-                aria-controls="pills-home"
-                aria-selected="true"
-              >
-                Home
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-profile-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-profile"
-                type="button"
-                role="tab"
-                aria-controls="pills-profile"
-                aria-selected="false"
-              >
-                Profile
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-contact-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-contact"
-                type="button"
-                role="tab"
-                aria-controls="pills-contact"
-                aria-selected="false"
-              >
-                Contact
-              </button>
-            </li>
           </ul>
+        </header>
 
-          <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content" id="pills-tabContent">
             <div
               class="tab-pane fade show active"
               id="pills-home"
               role="tabpanel"
               aria-labelledby="pills-home-tab"
             >
-
-                <div class="container py-4">
-                    <div class="bg-light p-5 rounded">
+                <div class="bg-light p-5 rounded">
                     <div class="col-sm-8 mx-auto">          
                         <p>
-                        豊田市周辺で活動をする男子チームです<br>
-                        練習は毎週土曜日 19:00～21:00<br>
-                        愛知県の新スポーツリーグに所属してます<br>
-                        現在新たなメンバーを募集しています<br>
-                        バスケが好きで上手くなりたい。楽しみたい人なら誰でも大歓迎です<br>
-                        年齢層は20代～40代<br>
-                        リーグも、年齢制限のない試合、35才以上の試合とあります<br>
-                        参加希望の方はこちらよりメッセージお願いします<br>  
+                            豊田市周辺で活動をする男子チームです<br>
+                            練習は毎週土曜日 19:00～21:00<br>
+                            愛知県の新スポーツリーグに所属してます<br>
+                            現在新たなメンバーを募集しています<br>
+                            バスケが好きで上手くなりたい。楽しみたい人なら誰でも大歓迎です<br>
+                            年齢層は20代～40代<br>
+                            リーグも、年齢制限のない試合、35才以上の試合とあります<br>
+                            参加希望の方はこちらよりメッセージお願いします<br>  
                         </p>
                     </div>
-                    </div>
-                </div>    
-          
+                </div>
+
+
             </div>
+    
             <div
               class="tab-pane fade"
-              id="pills-profile"
+              id="pills-link"
               role="tabpanel"
-              aria-labelledby="pills-profile-tab"
+              aria-labelledby="pills-link-tab"
             >
-
-
-            <div id="Place" class="container py-4">
                 <div class="bg-light p-5 rounded">
-                  <div class="col-sm-8 mx-auto">          
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe class="embed-responsive-item" 
-                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31081.78515015981!2d137.07060869157462!3d35.02997331983834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60049ef75e23d721%3A0x231925b0d9c77073!2z6LGK55Sw5biC56uL6auY5bKh5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1650327425170!5m2!1sja!2sjp" 
-                              frameborder="0" 
-                              style="border:0" 
-                              allowfullscreen></iframe>
-                    </div>  
-                  </div>
-                </div>
-              </div>              
+                    <div class="col-sm-8 mx-auto">          
+                        参加しているリーグ: <a href="http://shinspo-basket.sakura.ne.jp/" target="_blank" class="text-primary">新日本スポーツ連盟 愛知バスケットボール協会</a><br>
+                    </div>
+                </div>        
+            </div>          
+
+            <div
+              class="tab-pane fade"
+              id="pills-place"
+              role="tabpanel"
+              aria-labelledby="pills-place-tab"
+            >
+                <div class="bg-light p-5 rounded">
+                    <div class="col-sm-8 mx-auto">          
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31081.78515015981!2d137.07060869157462!3d35.02997331983834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60049ef75e23d721%3A0x231925b0d9c77073!2z6LGK55Sw5biC56uL6auY5bKh5Lit5a2m5qCh!5e0!3m2!1sja!2sjp!4v1650327425170!5m2!1sja!2sjp" 
+                            frameborder="0" 
+                            style="border:0" 
+                            allowfullscreen></iframe>
+                        </div>  
+                    </div>
+                </div>                
             </div>
+
             <div
               class="tab-pane fade"
               id="pills-contact"
               role="tabpanel"
               aria-labelledby="pills-contact-tab"
             >
-            <div id="Link" class="container py-4">
                 <div class="bg-light p-5 rounded">
-                        <div class="col-sm-8 mx-auto">          
-                        Email Address: <a href="mailto:s.taka.1981.02.19@gmail.com" class="text-primary">メールはこちらへ</a>          
-                        </div>
+                    <div class="col-sm-8 mx-auto">          
+                        Email Address: <a href="mailto:s.taka.1981.02.19@gmail.com" class="text-primary">メールはこちらへ</a>                                  
                     </div>  
-                </div>                  
+                </div>
             </div>
-        </div>
-    </div>
-
+        </div>    
 
     <script src="js/bootstrap.min.js"></script>    
   </body>
