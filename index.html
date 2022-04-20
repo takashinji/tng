@@ -7,7 +7,10 @@
     <title>T.N.G</title>
     <!-- BootstrapのCSS読み込み -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <body>    
+
+  </head>
+
+  <body>        
 
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
@@ -72,9 +75,7 @@
     <div id="Link" class="container py-4">
       <div class="bg-light p-5 rounded">
         <div class="col-sm-8 mx-auto">          
-
           参加しているリーグ: <a href="http://shinspo-basket.sakura.ne.jp/" target="_blank" class="text-primary">新日本スポーツ連盟 愛知バスケットボール協会</a><br>
-
         </div>
       </div>
     </div>    
@@ -87,19 +88,21 @@
       </div>
     </div>                  
         
-    <footer class="fixed-bottom">
-      footer
-    </footer>
-
-
     <footer class="fixed-bottom footer mt-auto py-1 bg-dark">
       <div class="container">
         <span class="text-muted">BasketBall Team TNG</span>
       </div>
     </footer>
-    
 
+    <div id="box"></div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(function(){
+        $("#box").load("header.html");
+      });
+    </script>    
+    
     <script src="js/bootstrap.min.js"></script>    
   </body>
-
 </html>
