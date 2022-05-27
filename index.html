@@ -1,247 +1,222 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>T.N.G</title>
-    <!-- BootstrapのCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />        
-  </head>
 
-  <body>                                      
-        
-    <header class="p-3 bg-dark text-white">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img src="./icon/basketball.svg" alt="Bootstrap" width="48" height="48">    
-                </a>                                        
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="pills-tab" role="tablist">
-                    <li>
-                        <a class="nav-link px-2 text-white"
-                           id="pills-home-tab"
-                           data-bs-target="#pills-home"
-                           data-bs-toggle="pill"                  
-                           type="button"
-                           role="tab"
-                           aria-controls="pills-home"
-                           aria-selected="true">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link px-2 text-white"
-                           id="pills-about-tab"
-                           data-bs-target="#pills-about"
-                           data-bs-toggle="pill"                  
-                           type="button"
-                           role="tab"
-                           aria-controls="pills-about"
-                           aria-selected="true">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link px-2 text-white"
-                           id="pills-contact-tab"
-                           data-bs-target="#pills-contact"
-                           data-bs-toggle="pill"                  
-                           type="button"
-                           role="tab"
-                           aria-controls="pills-contact"
-                           aria-selected="true">
-                            Contact
-                        </a>
-                    </li>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>T.N.G</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
 
-                    <li>
-                      <a class="nav-link px-2 text-white"
-                         id="pills-contact2-tab"
-                         data-bs-target="#pills-contact2"
-                         data-bs-toggle="pill"                  
-                         type="button"
-                         role="tab"
-                         aria-controls="pills-contact2"
-                         aria-selected="true">
-                          参加希望
-                      </a>
-                  </li>
-                </ul>        
+<body>
+
+  <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="./icon/basketball.svg" alt="Bootstrap" width="48" height="48">
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="pills-tab" role="tablist">
+          <li>
+            <a class="nav-link px-2 text-white" id="pills-home-tab" data-bs-target="#pills-home" data-bs-toggle="pill"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="nav-link px-2 text-white" id="pills-about-tab" data-bs-target="#pills-about" data-bs-toggle="pill"
+              type="button" role="tab" aria-controls="pills-about" aria-selected="true">
+              About
+            </a>
+          </li>
+          <li>
+            <a class="nav-link px-2 text-white" id="pills-contact-tab" data-bs-target="#pills-contact"
+              data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-contact" aria-selected="true">
+              Contact
+            </a>
+          </li>
+
+          <div>
+            
+          </div>
+
+          <li>
+            <a class="nav-link px-2 text-white" id="pills-contact2-tab" data-bs-target="#pills-contact2"
+              data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-contact2" aria-selected="true">
+              参加希望
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container">
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">チーム紹介</h1>
+                <p class="text-muted">
+                  2022.04.01<br>
+                  豊田市周辺で活動をする男子チームです<br>
+                  愛知県の新スポーツリーグに所属してます<br>
+                  練習は毎週土曜日 19:00～21:00<br>
+                  新たなメンバーを募集しています<br>
+                  年齢層は20代～40代<br>
+                  参加希望の方はこちらよりメッセージお願いします<br>
+                <p>
+                  <a href="mailto:s.taka.1981.02.19@gmail.com" class="btn btn-dark btn-sm my-2">参加希望メール</a>
+              </div>
             </div>
+          </section>
         </div>
-    </header>    
 
-    <main>              
-        <div class="container">
-            <div class="tab-content" id="pills-tabContent">    
-                <div class="tab-pane fade show active"
-                     id="pills-home"
-                     role="tabpanel"
-                     aria-labelledby="pills-home-tab">
-                    <section class="py-5 text-center container">
-                        <div class="row py-lg-5">
-                          <div class="col-lg-6 col-md-8 mx-auto">
-                            <h1 class="fw-light">チーム紹介</h1>
-                            <p class="text-muted">
-                                2022.04.01<br>
-                                豊田市周辺で活動をする男子チームです<br>
-                                愛知県の新スポーツリーグに所属してます<br>
-                                練習は毎週土曜日 19:00～21:00<br>                                
-                                新たなメンバーを募集しています<br>
-                                年齢層は20代～40代<br>                                
-                                参加希望の方はこちらよりメッセージお願いします<br>                                
-                            <p>
-                            <a href="mailto:s.taka.1981.02.19@gmail.com" class="btn btn-dark btn-sm my-2">参加希望メール</a>   
-                          </div>
-                        </div>
-                    </section>                                                     
+        <div class="tab-pane fade show" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+
+          <div class="py-5 text-center container">
+            <h1 class="fw-light">選手紹介</h1>
+          </div>
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 pb-5">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./img/takagi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">うめみざわうめみ</h5>
+                  <p class="card-text">背番号 #13<br>ポジション PG</p>
                 </div>
-        
-                <div class="tab-pane fade show"
-                     id="pills-about"
-                     role="tabpanel"
-                     aria-labelledby="pills-about-tab">
-
-                    <div class="py-5 text-center container">
-                      <h1 class="fw-light">選手紹介</h1>
-                    </div>
-                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 pb-5">
-                        <div class="col">
-                          <div class="card h-100">
-                            <img src="./img/takagi.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">うめみざわうめみ</h5>
-                              <p class="card-text">背番号 #13<br>ポジション PG</p>                                  
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                              <img src="./img/takagi.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">男漁り亭　面食い丸</h5>
-                                <p class="card-text">背番号 #13<br>ポジション PG</p>                                  
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                              <img src="./img/takagi.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">ねこやろう</h5>
-                                <p class="card-text">背番号 #13<br>ポジション PG</p>                                  
-                              </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                          <div class="card h-100">
-                            <img src="./img/takagi.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">ぬこ</h5>
-                              <p class="card-text">背番号 #13<br>ポジション PG</p>                                  
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100">
-                              <img src="./img/takagi.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">伊藤公一</h5>
-                                <p class="card-text">背番号 #13<br>ポジション PG</p>                                  
-                              </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./img/takagi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">男漁り亭　面食い丸</h5>
+                  <p class="card-text">背番号 #13<br>ポジション PG</p>
                 </div>
-        
-                <div class="tab-pane fade show"
-                     id="pills-contact"
-                     role="tabpanel"
-                     aria-labelledby="pills-contact-tab">
-                                          
-                     <section class="py-5 text-center container">
-                        <div class="row py-lg-5">
-                          <div class="col-lg-6 col-md-8 mx-auto">
-                            <h1 class="fw-light">問合せ</h1>
-                            <p class="text-muted">
-                                Email Address: <a href="mailto:s.taka.1981.02.19@gmail.com" class="text-primary">メールはこちらへ</a>
-                            <p>                       
-                            <div class="container py-3">                                
-                                <div class="ratio ratio-16x9" id="yt16x9">
-                                    <iframe src="https://www.youtube.com/embed/UiWVgxBfaro"></iframe>                                
-                                </div>                                
-                            </div>
-                            <div class="container py-3">
-                                <div class="ratio ratio-16x9" id="yt16x9">
-                                    <iframe src="https://www.youtube.com/embed/0TwNAHoPPF8"></iframe>                                
-                                </div>                                
-                                <div class="d-flex align-items-center justify-content-center">                                  
-                                  <div>
-                                    <a href="https://www.youtube.com/channel/UCQvSHRN8QVYRnQb9o8eyw-g" class="text-primary fw-light" target="_blank">
-                                      <img src="./icon/sadako.png" class="bi flex-shrink-0 me-2" width="32" height="32">
-                                      ぎーちゃんねる
-                                    </a> 
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>        
-
-                <div class="tab-pane fade show"
-                     id="pills-contact2"
-                     role="tabpanel"
-                     aria-labelledby="pills-contact2-tab">                           
-                  
-                     <section class="py-5">
-                      <div class="card">
-                        <div class="card-header text-center">                                            
-                          お問い合わせ
-                        </div>
-                        <div class="card-body">                          
-                          <p class="card-text">練習参加希望、質問等、気軽にメッセージください。</p>
-                          <div id="formWrapper">
-                            <form  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdP25GOCUzFnZLiq8b_K4ZCrmmIz7Q0N8SrPrBY5vZtZKdBXQ/formResponse" method="POST" name="myForm" target="dummyIframe">
-                              <div class="mb-3">
-                                <input type="text" class="form-control" id="name" name="entry.1879369403" placeholder="名前(必須)" required/>
-                              </div>      
-                              <div class="mb-3">
-                                <input type="mail" class="form-control" id="mail" name="entry.2110512684" placeholder="メールアドレス(必須)" required/>
-                              </div>      
-                              <div class="mb-3">
-                                <textarea class="form-control" id="message" name="entry.74412360" placeholder="メッセージを入力してください" required rows="5" cols="40"></textarea>
-                              </div>                                                       
-                              <div class="text-center">
-                                <input class="btn btn-dark btn-sm" type="button" value="送信" onclick="submitForm()"/>
-                              </div>                                                          
-                            </form>
-                            <iframe name="dummyIframe" style="display:none;"></iframe>
-                            </div>
-                          <div id="thxMessage" style="display:none;"><p>お問い合わせありがとうございました。</p></div>                            
-                        </div>
-                      </div> 
-                                          
-                      <script>
-                        function submitForm(){
-                          document.myForm.submit();
-                          document.getElementById('formWrapper').style.display = 'none';
-                          document.getElementById('thxMessage').style.display = 'block';
-                        }
-                      </script>
-                     </section>                     
-              </div>        
-            </div>    
-        </div>    
-    </main>    
-
-    <footer class="fixed-bottom footer mt-auto p-1 bg-dark">
-        <div class="container text-center">                  
-            <span class="text-white small">TNG, Inc. All Rights Reserved.</span>            
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./img/takagi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ねこやろう</h5>
+                  <p class="card-text">背番号 #13<br>ポジション PG</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./img/takagi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ぬこ</h5>
+                  <p class="card-text">背番号 #13<br>ポジション PG</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./img/takagi.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">伊藤公一</h5>
+                  <p class="card-text">背番号 #13<br>ポジション PG</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>      
 
-    <script src="js/bootstrap.min.js"></script>    
+        <div class="tab-pane fade show" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
-  </body>
+          <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">問合せ</h1>
+                <p class="text-muted">
+                  Email Address: <a href="mailto:s.taka.1981.02.19@gmail.com" class="text-primary">メールはこちらへ</a>
+                <p>
+                <div class="container py-3">
+                  <div class="ratio ratio-16x9" id="yt16x9">
+                    <iframe src="https://www.youtube.com/embed/UiWVgxBfaro"></iframe>
+                  </div>
+                </div>
+                <div class="container py-3">
+                  <div class="ratio ratio-16x9" id="yt16x9">
+                    <iframe src="https://www.youtube.com/embed/0TwNAHoPPF8"></iframe>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center">
+                    <div>
+                      <a href="https://www.youtube.com/channel/UCQvSHRN8QVYRnQb9o8eyw-g" class="text-primary fw-light"
+                        target="_blank">
+                        <img src="./icon/sadako.png" class="bi flex-shrink-0 me-2" width="32" height="32">
+                        ぎーちゃんねる
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+        </div>
+
+        <div class="tab-pane fade show" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab">
+          <section class="py-5">
+            <div class="card">
+              <div class="card-header text-center">
+                お問い合わせ
+              </div>
+              <div class="card-body">
+                <p class="card-text">練習参加希望、質問等、気軽にメッセージください。</p>
+                <div id="formWrapper">
+                  <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdP25GOCUzFnZLiq8b_K4ZCrmmIz7Q0N8SrPrBY5vZtZKdBXQ/formResponse"
+                    method="POST" name="myForm" target="dummyIframe">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="name" name="entry.1879369403" placeholder="名前(必須)" required />
+                    </div>
+                    <div class="mb-3">
+                      <input type="mail" class="form-control" id="mail" name="entry.2110512684" placeholder="メールアドレス(必須)" required />
+                    </div>
+                    <div class="mb-3">
+                      <textarea class="form-control" id="message" name="entry.74412360" placeholder="メッセージを入力してください" required rows="5" cols="40"></textarea>
+                    </div>
+                    <div class="text-center">
+                      <input class="btn btn-dark btn-sm" type="button" value="送信" onclick="submitForm()" />
+                    </div>
+                  </form>
+                  <iframe name="dummyIframe" style="display:none;"></iframe>
+                </div>
+                <div id="thxMessage" style="display:none;">
+                  <p>お問い合わせありがとうございました。</p>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              function submitForm() {
+                document.myForm.submit();
+                document.getElementById('formWrapper').style.display = 'none';
+                document.getElementById('thxMessage').style.display = 'block';
+              }
+            </script>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="fixed-bottom footer mt-auto p-1 bg-dark">
+    <div class="container text-center">
+      <span class="text-white small">TNG, Inc. All Rights Reserved.</span>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
 </html>
