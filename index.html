@@ -55,7 +55,7 @@
                         </a>
                     </li>
 
-                    <!-- <li>
+                    <li>
                       <a class="nav-link px-2 text-white"
                          id="pills-contact2-tab"
                          data-bs-target="#pills-contact2"
@@ -66,13 +66,13 @@
                          aria-selected="true">
                           参加希望
                       </a>
-                  </li> -->
+                  </li>
                 </ul>        
             </div>
         </div>
     </header>    
 
-    <main>        
+    <main>              
         <div class="container">
             <div class="tab-content" id="pills-tabContent">    
                 <div class="tab-pane fade show active"
@@ -95,7 +95,7 @@
                             <a href="mailto:s.taka.1981.02.19@gmail.com" class="btn btn-dark btn-sm my-2">参加希望メール</a>
                           </div>
                         </div>
-                    </section>                    
+                    </section>                                                     
                 </div>
         
                 <div class="tab-pane fade show"
@@ -189,15 +189,49 @@
                     </section>
                 </div>        
 
-                <!-- <div class="tab-pane fade show"
+                <div class="tab-pane fade show"
                      id="pills-contact2"
                      role="tabpanel"
-                     aria-labelledby="pills-contact2-tab">
-
-                    <section class="py-5 text-center container">
-                      <iframe class="embed-responsive-item" src="https://forms.gle/HkTcXvbXcYVwbGU6A" scrolling="no" width="640" height="709" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>                      
-                    </section>                                                                               
-                </div>         -->
+                     aria-labelledby="pills-contact2-tab">      
+                  
+                     <section class="py-5">
+                      <div class="card">
+                        <div class="card-header">
+                          お問い合わせフォーム
+                        </div>
+                        <div class="card-body">                          
+                          <p class="card-text">練習への参加希望、質問、なんでも大丈夫です。気軽にメッセージください。</p>
+                          <div id="formWrapper">
+                            <form  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdP25GOCUzFnZLiq8b_K4ZCrmmIz7Q0N8SrPrBY5vZtZKdBXQ/formResponse" method="POST" name="myForm" target="dummyIframe">
+                              <div class="mb-3">
+                                <label for="name">お名前</label>
+                                <input type="text" class="form-control" id="name" name="entry.1879369403" placeholder="伊藤 公一" required/>
+                              </div>      
+                              <div class="mb-3">
+                                <label for="mail">メールアドレス</label>
+                                <input type="mail" class="form-control" id="mail" name="entry.2110512684" placeholder="mail@example.com" required/>
+                              </div>      
+                              <div class="mb-3">
+                                <label for="message">問合せ内容</label>
+                                <textarea class="form-control" id="message" name="entry.74412360" placeholder="質問、練習参加等" required rows="5" cols="40"></textarea>
+                              </div>                                    
+                              <input class="btn btn-dark btn-sm" type="button" value="送信" onclick="submitForm()"/>
+                            </form>
+                            <iframe name="dummyIframe" style="display:none;"></iframe>
+                            </div>
+                          <div id="thxMessage" style="display:none;"><p>お問い合わせありがとうございました。</p></div>                            
+                        </div>
+                      </div> 
+                                          
+                      <script>
+                        function submitForm(){
+                          document.myForm.submit();
+                          document.getElementById('formWrapper').style.display = 'none';
+                          document.getElementById('thxMessage').style.display = 'block';
+                        }
+                      </script>
+                     </section>                     
+                </div>        
             </div>    
         </div>    
     </main>    
@@ -209,5 +243,6 @@
     </footer>      
 
     <script src="js/bootstrap.min.js"></script>    
+
   </body>
 </html>
