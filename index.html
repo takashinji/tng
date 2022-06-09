@@ -31,16 +31,13 @@
               About
             </a>
           </li>
+
           <li>
             <a class="nav-link px-2 text-white" id="pills-contact-tab" data-bs-target="#pills-contact"
               data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-contact" aria-selected="true">
               Contact
             </a>
           </li>
-
-          <div>
-            
-          </div>
 
           <li>
             <a class="nav-link px-2 text-white" id="pills-contact2-tab" data-bs-target="#pills-contact2"
@@ -166,12 +163,12 @@
             </section>
           </div>
 
-          <div class="tab-pane fade show" id="congratulations-message" role="tabpanel" aria-labelledby="congratulations-message-tab">
+          <div class="tab-pane fade show" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact2-tab">
             <div class="container mt-3 pt-3">
               <div class="row">
                 <div class="col-md-6 offset-md-3">
                   <div class="mb-3 text-center">
-                    <h5>お祝いメッセージ</h5>
+                    <h5>お問い合わせ</h5>
                   </div>                
                   <div id="formWrapper">
                     <form
@@ -179,6 +176,9 @@
                     method="POST" name="myForm" target="dummyIframe">
                       <div class="mb-3">
                         <input type="text" class="form-control" id="name" name="entry.1879369403" placeholder="名前(必須)" required />
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" class="form-control" id="mail" name="entry.2110512684" placeholder="メールアドレス" required />
                       </div>
                       <div class="mb-3">
                         <textarea class="form-control" id="message" name="entry.74412360" placeholder="メッセージを入力してください" required rows="5" cols="40"></textarea>                      
@@ -190,8 +190,7 @@
                     <iframe name="dummyIframe" style="display:none;"></iframe>
                   </div>
                   <div class="text-center" id="thxMessage" style="display:none;">
-                    <p>お祝いメッセージありがとうございました<br>
-                    新郎 髙木慎司 新婦 井ノ口愛</p>
+                    <p>お問い合わせありがとうございました</p>
                   </div>
                 </div>
               </div>
@@ -204,6 +203,46 @@
               }
             </script>
           </div>
+
+          <div class="tab-pane fade show" id="congratulations-message" role="tabpanel" aria-labelledby="congratulations-message-tab">
+            <div class="container mt-3 pt-3">
+              <div class="row">
+                <div class="col-md-6 offset-md-3">
+                  <div class="mb-3 text-center">
+                    <h5>お祝いメッセージ</h5>
+                  </div>                
+                  <div id="formWrapper2">
+                    <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdz5BZMm2jnkOCnOIBIaJF8QiCxe13FUmm9fcldoOVs1vwk7g/formResponse"
+                    method="POST" name="myForm2" target="dummyIframe">
+                      <div class="mb-3">
+                        <input type="text" class="form-control" id="name" name="entry.1788781477" placeholder="名前(必須)" required />
+                      </div>
+                      <div class="mb-3">
+                        <textarea class="form-control" id="message" name="entry.409510615" placeholder="メッセージを入力してください" required rows="5" cols="40"></textarea>                      
+                      </div>
+                      <div class="mb-3 text-center">
+                        <input class="btn btn-dark btn-sm" type="button" value="送信" onclick="submitForm2()" />    
+                      </div>
+                    </form>
+                    <iframe name="dummyIframe" style="display:none;"></iframe>
+                  </div>
+                  <div class="text-center" id="thxMessage2" style="display:none;">
+                    <p>お祝いメッセージありがとうございました<br>
+                    新郎 髙木慎司 新婦 井ノ口愛</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              function submitForm2() {
+                document.myForm2.submit();
+                document.getElementById('formWrapper2').style.display = 'none';
+                document.getElementById('thxMessage2').style.display = 'block';
+              }
+            </script>
+          </div>
+
         </div>
       </div>
     </div>
