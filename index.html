@@ -8,6 +8,20 @@
   <title>T.N.G</title>
   <!-- BootstrapのCSS読み込み -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <script>
+    var request = new XMLHttpRequest();
+ 
+    request.open('GET', 'https://script.google.com/macros/s/AKfycbxvlRjWwsx7mChvAFVyPZAtUHpgn8mm5fFO4iLWh6g3/dev', true);
+    request.responseType = 'json';
+ 
+    request.onload = function () {
+      var data = this.response;
+      console.log(data);
+    };
+ 
+    request.send();
+  </script>  
 </head>
 
 <body>
@@ -203,6 +217,8 @@
           </div>
 
           <div class="tab-pane fade show active" id="congratulations-message" role="tabpanel" aria-labelledby="congratulations-message-tab">
+            
+
             <div class="container mt-3 pt-3">
               <div class="row">
                 <div class="col-md-6 offset-md-3">
@@ -220,14 +236,18 @@
                         <textarea class="form-control" id="message" name="entry.409510615" placeholder="自由にメッセージ書いてください" required rows="5" cols="40"></textarea>                      
                       </div>
                       <div class="mb-3 text-center">
-                        <input class="btn btn-dark btn-sm" type="button" value="送信" onclick="submitForm2()" />    
-                      </div>  
+                        <input class="btn btn-dark btn-sm" type="button" value="送信" onclick="submitForm2()" />                                                                                                
+                      </div>                        
                     </form>                    
+
+
                     <iframe name="dummyIframe" style="display:none;"></iframe>
                   </div>
                   <div class="text-center" id="thxMessage2" style="display:none;">
-                    <p class="text-muted">お祝いメッセージありがとうございました<br>
-                    新郎 髙木慎司 新婦 井ノ口愛</p>                    
+                    <p class="text-muted">
+                      お祝いメッセージありがとうございました<br>
+                      新郎 髙木慎司 新婦 井ノ口愛                      
+                    </p>                    
                   </div>
                 </div>
               </div>
