@@ -207,10 +207,11 @@
             <div class="container mt-3 pt-3">
               <div class="row">
                 <div class="col-md-6 offset-md-3">
-                  <div class="mb-3 text-center">
-                    <p class="text-muted">新郎新婦へのお祝いのメッセージを送ってね</p>                    
-                  </div>                
                   <div id="formWrapper2">
+                    <div class="mb-3 text-center">
+                      <p class="text-muted">新郎新婦へのお祝いのメッセージを送ってね<br>名前はイニシャルでも、あだ名でも大丈夫だよ</p>                    
+                    </div>                
+  
                     <form
                     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdz5BZMm2jnkOCnOIBIaJF8QiCxe13FUmm9fcldoOVs1vwk7g/formResponse"
                     method="POST" name="myForm2" target="dummyIframe">
@@ -221,37 +222,40 @@
                         <textarea class="form-control" id="message" name="entry.409510615" placeholder="自由にメッセージ書いてください" required rows="5" cols="40"></textarea>                      
                       </div>
                       <div class="mb-3 text-center">
-                        <input class="btn btn-dark btn-sm" type="button" value="送信" onclick="submitForm2()" />                                                                                                
-                      </div>  
-                      
-                      <!-- <div class="text-center">
-                        <h6>投稿されたメッセージ</h6>
-                        <ul id="contents_list" class="list-group"></ul>                      
-                      </div> -->
-
-                      <h6>投稿されたメッセージ一覧</h6>
-                      <div id="contents_list" class="d-grid gap-3">
-                      </div>                      
-                      
+                        <!-- <input class="btn btn-dark btn-sm" type="button" value="メッセージを送信" onclick="submitForm2()" />     -->
+                        <input class="btn btn-dark btn-sm" type="button" value="メッセージを送信" onclick="reload()" />                                                  
+                      </div>                                            
                     </form>                    
 
+                    <div class="mb-3 text-center">                        
+                      <h6>投稿されたメッセージ一覧</h6>
+                      <div id="contents_list" class="d-grid gap-3 pb-5">
+                      </div>                                            
+                    </div>                        
+                    
                     <iframe name="dummyIframe" style="display:none;"></iframe>
                   </div>
                   <div class="text-center" id="thxMessage2" style="display:none;">
                     <p class="text-muted">
                       お祝いメッセージありがとうございました<br>
                       新郎 髙木慎司 新婦 井ノ口愛                      
-                    </p>                                        
+                    </p>
                   </div>
                 </div>
               </div>
+
             </div>
             <script>
               function submitForm2() {
                 document.myForm2.submit();
                 document.getElementById('formWrapper2').style.display = 'none';
-                document.getElementById('thxMessage2').style.display = 'block';
+                document.getElementById('thxMessage2').style.display = 'block';                
+                document.location.reload();
               }
+              function reload() {
+                document.myForm2.submit();
+                document.location.reload();
+              }              
             </script>
           </div>
         </div>
@@ -268,21 +272,17 @@
   <script src="js/bootstrap.min.js"></script>
 </body>
 
-<script>
-  const endpoint = "https://script.google.com/macros/s/AKfycbzTcgWSLWEYzxa36Ta9ZnHY9AIDlL-euF-JM1KGBrFq4y37-EXL0hVr9Mwp_xUXo2O5PQ/exec";                        
-  //APIを使って非同期データを取得する
-  fetch(endpoint)
-  .then(response => response.json())
-  .then(data => {
-      for (var i in data) {
-          // $("#contents_list").append("<li>" + data[i].お祝いメッセージ + "</li>");          
-          // $("#contents_list").append('<li class="list-group-item">' + data[i].お名前 + '<br>' + data[i].お祝いメッセージ + '</li>');
+  <script>
+    const endpoint = "https://script.google.com/macros/s/AKfycbzTcgWSLWEYzxa36Ta9ZnHY9AIDlL-euF-JM1KGBrFq4y37-EXL0hVr9Mwp_xUXo2O5PQ/exec";                        
+    //APIを使って非同期データを取得する
+    fetch(endpoint)
+    .then(response => response.json())
+    .then(data => {
 
-          $("#contents_list").append('<div class="p-2 bg-light border">' + data[i].お名前 + '<br>' + data[i].お祝いメッセージ + '</div>');
-
-          // <div class="p-2 bg-light border">Grid item 1</div>
-      }
-  });
-</script>
-
+        for (var i in data.reverse()) {          
+            // $("#contents_list").append('<li class="list-group-item">' + data[i].お名前 + '<br>' + data[i].お祝いメッセージ + '</li>');
+            $("#contents_list").append('<div class="p-2 bg-light border">' + data[i].お名前 + 'さん<br>' + data[i].お祝いメッセージ + '</div>');                      
+        }
+    });
+  </script>
 </html>
