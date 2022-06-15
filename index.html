@@ -222,8 +222,8 @@
                         <textarea class="form-control" id="message" name="entry.409510615" placeholder="自由にメッセージ書いてください" required rows="5" cols="40"></textarea>                      
                       </div>
                       <div class="mb-3 text-center">
-                        <!-- <input class="btn btn-dark btn-sm" type="button" value="メッセージを送信" onclick="submitForm2()" />     -->
-                        <input class="btn btn-dark btn-sm" type="button" value="メッセージを送信" onclick="reload()" />                                                  
+                        <input class="btn btn-dark btn-sm" type="button" value="メッセージを送信" onclick="submitForm2()" />    
+                        <!-- <input class="btn btn-dark" type="button" value="メッセージを送信" onclick="reload()"/>                                                   -->
                       </div>                                            
                     </form>                    
 
@@ -272,17 +272,19 @@
   <script src="js/bootstrap.min.js"></script>
 </body>
 
-  <script>
+  <script>    
     const endpoint = "https://script.google.com/macros/s/AKfycbzTcgWSLWEYzxa36Ta9ZnHY9AIDlL-euF-JM1KGBrFq4y37-EXL0hVr9Mwp_xUXo2O5PQ/exec";                        
     //APIを使って非同期データを取得する
     fetch(endpoint)
     .then(response => response.json())
     .then(data => {
-
         for (var i in data.reverse()) {          
             // $("#contents_list").append('<li class="list-group-item">' + data[i].お名前 + '<br>' + data[i].お祝いメッセージ + '</li>');
             $("#contents_list").append('<div class="p-2 bg-light border">' + data[i].お名前 + 'さん<br>' + data[i].お祝いメッセージ + '</div>');                      
         }
     });
   </script>
+
+<script type="text/javascript">
+</script>  
 </html>
