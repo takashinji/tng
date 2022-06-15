@@ -222,17 +222,15 @@
                         <textarea class="form-control" id="message" name="entry.409510615" placeholder="自由にメッセージ書いてください" required rows="5" cols="40"></textarea>                      
                       </div>
                       <div class="mb-3 text-center">
-                        <input class="btn btn-dark btn-sm" type="button" value="メッセージを送信" onclick="submitForm2()" />    
-                        <!-- <input class="btn btn-dark" type="button" value="メッセージを送信" onclick="reload()"/>                                                   -->
-                      </div>                                            
+                        <input class="btn btn-dark btn-sm" type="button" value="メッセージを送信" onclick="submitForm2()" />
+                      </div>
                     </form>                    
 
                     <div class="mb-3 text-center">                        
                       <h6>投稿されたメッセージ一覧</h6>
-                      <div id="contents_list" class="d-grid gap-3 pb-5">
-                      </div>                                            
-                    </div>                        
-                    
+                      <div id="contents_list" class="d-grid gap-3 pb-5">                        
+                      </div>
+                    </div>
                     <iframe name="dummyIframe" style="display:none;"></iframe>
                   </div>
                   <div class="text-center" id="thxMessage2" style="display:none;">
@@ -240,20 +238,19 @@
                       お祝いメッセージありがとうございました<br>
                       新郎 髙木慎司 新婦 井ノ口愛                      
                     </p>
+
                   </div>
                 </div>
               </div>
-
             </div>
+
             <script>
               function submitForm2() {
-                document.myForm2.submit();
-                document.getElementById('formWrapper2').style.display = 'none';
-                document.getElementById('thxMessage2').style.display = 'block';                                
-              }
-              function reload() {
                 document.myForm2.submit();                
-              }              
+                document.getElementById('formWrapper2').style.display = 'none';
+                document.getElementById('thxMessage2').style.display = 'block';
+
+              }
             </script>
           </div>
         </div>
@@ -276,9 +273,8 @@
     fetch(endpoint)
     .then(response => response.json())
     .then(data => {
-        for (var i in data.reverse()) {          
-            // $("#contents_list").append('<li class="list-group-item">' + data[i].お名前 + '<br>' + data[i].お祝いメッセージ + '</li>');
-            $("#contents_list").append('<div class="p-2 bg-light border">' + data[i].お名前 + 'さん<br>' + data[i].お祝いメッセージ + '</div>');                      
+        for (var i in data.reverse()) {                                  
+            $("#contents_list").append('<div class="bg-light border">' + data[i].お名前 + 'さん<br>' + data[i].お祝いメッセージ + '</div>');
         }
     });
   </script>
