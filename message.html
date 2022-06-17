@@ -76,7 +76,7 @@
                   if (!!name) {
                     val = name + 'さん<br>'+ data[i].お祝いメッセージ;
                   } else {
-                    val = data[i].お祝いメッセージ;
+                    val = '名無しの権兵衛さん<br>' + data[i].お祝いメッセージ;
                   }                  
                   $("#contents_list").append('<li class="list-group-item">' + val + '</li>');
                 }
