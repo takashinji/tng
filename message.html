@@ -42,7 +42,15 @@
           新郎 髙木慎司 新婦 井ノ口愛
         </p>
       </div>
-      <ul id="contents_list" class="pb-5 list-group list-group-numbered"></ul>      
+      <div class="pb-5">
+        <div class="card">
+          <div class="card-header">
+            メッセージ一覧
+          </div>
+          <ul class="list-group list-group-flush" id="contents_list">
+          </ul>
+        </div>      
+      </div>
 
       <iframe name="dummyIframe" style="display:none;"></iframe>
     
@@ -76,7 +84,7 @@
                 } else {
                   val = '名無しの権兵衛さん<br>' + data[i].お祝いメッセージ;
                 }                  
-                $("#contents_list").append('<li class="list-group-item">' + val + '</li>');
+                $("#contents_list").append('<li class="list-group-item">' + val + '</li>');                
               }
           });
         }
