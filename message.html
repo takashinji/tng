@@ -44,7 +44,7 @@
               新郎 髙木慎司 新婦 井ノ口愛                      
             </p>
           </div>  
-          <ul id="contents_list" class="pb-3"></ul>
+          <ul id="contents_list" class="pb-5 list-group"></ul>
         </div>        
         <iframe name="dummyIframe" style="display:none;"></iframe>
       
@@ -69,7 +69,16 @@
                   ul.removeChild(ul.children[0]);
                 }
                 for (var i in data.reverse()) {
-                  $("#contents_list").append("<li>" + data[i].お祝いメッセージ + "</li>");
+
+                  let name = data[i].お名前;
+                  let val = '';
+
+                  if (!!name) {
+                    val = name + 'さん<br>'+ data[i].お祝いメッセージ;
+                  } else {
+                    val = data[i].お祝いメッセージ;
+                  }                  
+                  $("#contents_list").append('<li class="list-group-item">' + val + '</li>');
                 }
             });
           }
