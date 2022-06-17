@@ -214,7 +214,7 @@
   
                     <form
                     action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdz5BZMm2jnkOCnOIBIaJF8QiCxe13FUmm9fcldoOVs1vwk7g/formResponse"
-                    method="POST" name="myForm2" target="dummyIframe">
+                    method="POST" name="myForm2" target="dummyIframe" id="sampleForm">
                       <div class="mb-3">
                         <input type="text" class="form-control" id="myname" name="entry.1788781477" placeholder="名前(入力しなくても大丈夫だよ)" required />
                       </div>
@@ -224,7 +224,7 @@
                       <div class="mb-3 text-center">
                         <input class="btn btn-dark btn-sm" type="button" value="メッセージを送信" onclick="submitForm2()" />                        
                       </div>
-                    </form>                    
+                    </form>                                    
 
                     <div class="mb-3">
                       <h6>投稿されたメッセージ一覧</h6>
@@ -246,11 +246,11 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>        
   
             <script>
               ShowData();
-              function submitForm2() {                      
+              function submitForm2() {                                                   
                 let message = document.getElementById('message1').value;                
                 if(!message) {
                   alert('メッセージは入力してね！');
