@@ -6,8 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>T.N.G</title>
-    <!-- BootstrapのCSS読み込み -->
+    <title>T.N.G</title>    
     <link href="css/bootstrap.min.css" rel="stylesheet" />  
     <script src="js/jquery-3.6.0.min.js"></script>    
   </head>
@@ -27,18 +26,24 @@
           <p class="text-muted">新郎新婦へのお祝いのメッセージを送ってね<br>名前はイニシャルでも、あだ名でも大丈夫だよ</p>                    
         </div>                
   
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdz5BZMm2jnkOCnOIBIaJF8QiCxe13FUmm9fcldoOVs1vwk7g/formResponse" method="POST" name="myForm2" target="dummyIframe" id="sampleForm">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdz5BZMm2jnkOCnOIBIaJF8QiCxe13FUmm9fcldoOVs1vwk7g/formResponse" method="POST" name="myForm" target="dummyIframe" id="sampleForm">
           <div class="mb-3">
             <input type="text" class="form-control" id="myname" name="entry.1788781477" placeholder="名前(入力しなくても大丈夫だよ)" required />
           </div>
           <div class="mb-3">
-            <textarea class="form-control" id="message1" name="entry.409510615" placeholder="自由にメッセージ書いてください" required rows="5" cols="40"></textarea>                      
+            <textarea class="form-control" id="message" name="entry.409510615" placeholder="自由にメッセージ書いてください" required rows="5" cols="40"></textarea>                      
           </div>
           <div class="mb-3 text-center">
             <input class="btn btn-dark btn-sm" type="submit" value="メッセージを送信"/>                        
           </div>
-        </form>                       
+        </form>                           
         <div class="pd-3">
+          <div class="text-center" id="thxMessage" style="display:none;">
+            <p class="text-muted">
+              お祝いメッセージありがとうございました<br>
+              新郎 髙木慎司 新婦 井ノ口愛                      
+            </p>
+          </div>  
           <ul id="contents_list" class="pb-3"></ul>
         </div>        
         <iframe name="dummyIframe" style="display:none;"></iframe>
@@ -47,9 +52,10 @@
           $(function() {
             ShowData();
           });
-          $('form').submit(function() {
-            alert('メッセージありがとうございました');
+          $('form').submit(function() {            
             ShowData();
+            document.getElementById('thxMessage').style.display = 'block';       
+            
           });
           function ShowData() {                
             const endpoint = "https://script.google.com/macros/s/AKfycbzTcgWSLWEYzxa36Ta9ZnHY9AIDlL-euF-JM1KGBrFq4y37-EXL0hVr9Mwp_xUXo2O5PQ/exec";                        
@@ -63,7 +69,6 @@
                 for (var i = 0; i < len; i++) {
                   ul.removeChild(ul.children[0]);
                 }
-  
                 for (var i in data.reverse()) {
                   $("#contents_list").append("<li>" + data[i].お祝いメッセージ + "</li>");
                 }
